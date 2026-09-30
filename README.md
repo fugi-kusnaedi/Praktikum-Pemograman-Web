@@ -1,9 +1,17 @@
 # Repositori Praktikum Pemrograman Web 2026
-**Informasi Mahasiswa:**
-* **Nama:** [Fugi Kusnaedi]
-* **NIM:** [2406088]
-* **Kelas/Prodi:** Teknik Informatika - ITG
-* **Kode MK:** IFRWP5151
+
+# 🎓 Informasi Mahasiswa
+
+![ITG](https://img.shields.io/badge/Kampus-ITG-blue?style=for-the-badge&logo=google-scholar)
+![Informatika](https://img.shields.io/badge/Prodi-Teknik_Informatika-007ACC?style=for-the-badge&logo=codeforces)
+
+| Detail | Informasi |
+| :--- | :--- |
+| **Nama Lengkap** | **Fugi Kusnaedi** |
+| **NIM** | `2406088` |
+| **Kelas / Prodi** | Teknik Informatika - ITG |
+| **Kode Mata Kuliah** | `IFRWP5151` |
+
 ---
 ## Catatan Modul 1
 - Instalasi & Verifikasi Tools (VS Code, Node.js, Laragon, Git).
