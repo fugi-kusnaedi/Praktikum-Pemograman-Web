@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Modul 2 - Project</title>
+
+    <link rel="stylesheet" href="project.css">
+    <script src="project.js" defer></script>
+</head>
+<body>
+
+    <!-- HEADER DAN NAVIGASI -->
+    <header>
+        <h1>Project Pertemuan 2</h1>
+
+        <nav aria-label="Navigasi utama">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="kontak.html">Hubungi Abi</a></li>
+                <li><a href="Project.html" aria-current="page">Projek</a></li>
+                <li><a href="Resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- FITUR 1: FORM TAMBAH DAN EDIT PROYEK -->
+        <section class="form-section" aria-labelledby="judul-form">
+            <h2 id="judul-form">Tambah Proyek</h2>
+
+            <form id="form-proyek" novalidate>
+
+                <p>
+                    <label for="judul">Judul Proyek:</label>
+                    <br>
+                    <input
+                        type="text"
+                        id="judul"
+                        name="judul"
+                        placeholder="Masukkan judul proyek"
+                    >
+                    <span class="error" id="err-judul" role="alert"></span>
+                </p>
+
+                <p>
+                    <label for="kategori">Kategori:</label>
+                    <br>
+                    <select id="kategori" name="kategori">
+                        <option>Web App</option>
+                        <option>Mobile App</option>
+                        <option>Desktop App</option>
+                        <option>Desain UI/UX</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="anggaran">Estimasi Anggaran (Rp):</label>
+                    <br>
+                    <input
+                        type="number"
+                        id="anggaran"
+                        name="anggaran"
+                        min="0"
+                        placeholder="Contoh: 500000"
+                    >
+                    <span class="error" id="err-anggaran" role="alert"></span>
+                </p>
+
+                <p>
+                    <label class="centang" for="selesai">
+                        <input
+                            type="checkbox"
+                            id="selesai"
+                            name="selesai"
+                        >
+                        Sudah Selesai
+                    </label>
+                </p>
+
+                <p>
+                    <button type="submit" id="tombol-simpan">
+                        Tambah proyek
+                    </button>
+
+                    <button type="button" id="batal" hidden>
+                        Batal edit
+                    </button>
+                </p>
+
+            </form>
+        </section>
+
+        <!-- FITUR 2: STATISTIK PROYEK -->
+        <section class="statistik" aria-label="Statistik proyek">
+
+            <div class="stat">
+                <strong id="stat-total">0</strong>
+                <span>Total Proyek</span>
+            </div>
+
+            <div class="stat">
+                <strong id="stat-selesai">0</strong>
+                <span>Selesai</span>
+            </div>
+
+            <div class="stat">
+                <strong id="stat-proses">0</strong>
+                <span>Dalam Pengerjaan</span>
+            </div>
+
+            <div class="stat">
+                <strong id="stat-anggaran">Rp0</strong>
+                <span>Total Anggaran</span>
+            </div>
+
+        </section>
+
+        <!-- FITUR 3: PENCARIAN DAN DAFTAR PROYEK -->
+        <section class="bagian-daftar" aria-labelledby="judul-daftar">
+
+            <div class="bar-daftar">
+                <h2 id="judul-daftar">Daftar Proyek</h2>
+
+                <input
+                    type="search"
+                    id="cari"
+                    placeholder="Cari nama proyek..."
+                    aria-label="Cari nama proyek"
+                >
+            </div>
+
+            <!-- Daftar proyek diisi oleh project.js -->
+            <div id="daftar" aria-live="polite"></div>
+
+        </section>
+
+    </main>
+
+    <!-- INFORMASI TAMBAHAN -->
+    <aside>
+        <h3>Link Proyek</h3>
+
+        <p>
+            <a
+                href="https://github.com/fugi-kusnaedi"
+                target="_blank"
+                rel="noopener noreferrer"
+            >https://github.com/fugi-kusnaedi</a>
+        </p>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Portofolio Mahasiswa - All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

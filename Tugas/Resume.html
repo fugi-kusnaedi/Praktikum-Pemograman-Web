@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul 2 - Resume</title>
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+
+    <header class="header-utama">
+        <h1>Resume Pertemuan 2</h1>
+        <p>Catatan Pembelajaran Pemrograman Web</p>
+    </header>
+
+    <nav aria-label="Navigasi utama">
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="kontak.html">Hubungi Abi</a></li>
+            <li><a href="Project.html">Projek</a></li>
+            <li><a href="Resume.html" aria-current="page">Resume</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="salam" class="kartu">
+            <h2>Hallo Gantenk!</h2>
+            <p>
+                Selamat datang di halaman resume pembelajaran
+                Pertemuan 2.
+            </p>
+        </section>
+
+        <section id="resume-hari-ini" class="kartu">
+            <h2>Resume Hari Ini</h2>
+            <p>
+                Hari ini belajar mengenai struktur konten dan semantik
+                dokumen HTML.
+            </p>
+        </section>
+
+        <section id="pengenalan-html" class="kartu">
+            <h2>1. Pengenalan HTML dan Anatomi Dokumen</h2>
+
+            <p>
+                HTML (HyperText Markup Language) adalah bahasa markah
+                standar untuk menyusun struktur dokumen web. Dokumen
+                HTML diawali dengan deklarasi
+                <code>&lt;!DOCTYPE html&gt;</code> yang memberi tahu
+                browser bahwa dokumen menggunakan standar HTML.
+            </p>
+
+            <p>
+                Anatomi dasar dokumen HTML terdiri dari dua bagian utama:
+            </p>
+
+            <ol>
+                <li>
+                    <strong>Head:</strong> Berisi informasi metadata
+                    tentang dokumen, seperti character set, judul halaman,
+                    dan tautan CSS. Informasi ini tidak ditampilkan
+                    langsung sebagai konten utama halaman.
+                </li>
+                <li>
+                    <strong>Body:</strong> Berisi seluruh konten yang
+                    ditampilkan kepada pengguna, seperti teks, gambar,
+                    tabel, formulir, dan tombol.
+                </li>
+            </ol>
+        </section>
+
+        <section id="tag-semantik" class="kartu">
+            <h2>2. Tag Semantik HTML vs. Non-Semantik</h2>
+
+            <article>
+                <h3>Tag Non-Semantik</h3>
+                <p>
+                    Tag non-semantik, seperti
+                    <code>&lt;div&gt;</code> dan
+                    <code>&lt;span&gt;</code>, tidak menjelaskan makna
+                    khusus dari konten yang berada di dalamnya.
+                </p>
+            </article>
+
+            <article>
+                <h3>Tag Semantik HTML</h3>
+                <p>
+                    Tag semantik menjelaskan peran dan struktur konten
+                    sehingga lebih mudah dipahami oleh pengembang,
+                    browser, screen reader, dan mesin pencari.
+                </p>
+
+                <p>Beberapa tag semantik utama HTML antara lain:</p>
+
+                <ul class="tag">
+                    <li>
+                        <code>&lt;header&gt;</code> — Bagian kepala
+                        halaman atau artikel.
+                    </li>
+                    <li>
+                        <code>&lt;nav&gt;</code> — Area tautan navigasi.
+                    </li>
+                    <li>
+                        <code>&lt;main&gt;</code> — Bagian konten utama.
+                    </li>
+                    <li>
+                        <code>&lt;section&gt;</code> — Kelompok konten
+                        yang berhubungan secara tematik.
+                    </li>
+                    <li>
+                        <code>&lt;article&gt;</code> — Konten mandiri,
+                        seperti berita atau postingan blog.
+                    </li>
+                    <li>
+                        <code>&lt;aside&gt;</code> — Konten sampingan
+                        atau pelengkap.
+                    </li>
+                    <li>
+                        <code>&lt;footer&gt;</code> — Bagian bawah
+                        halaman yang berisi informasi tambahan.
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Portofolio Mahasiswa - All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
