@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Aplikasi To-Do List - Modul 5</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;800&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="todo-app">
+ <h2>Daftar Tugas Saya</h2>
+
+ <!-- Fitur 1: Penghitung tugas (tepat di bawah judul) -->
+ <p id="taskCounter" class="task-counter">Total: 0 Tugas | Selesai: 0 | Belum Selesai: 0</p>
+ <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+ <!-- Form Input Tugas -->
+ <form id="todoForm" novalidate>
+ <div class="input-section">
+ <input type="text" id="taskInput" placeholder="Ketikkan tugas baru Anda..." autocomplete="off">
+ <button type="submit" class="add-btn">Tambah</button>
+ </div>
+ <div class="error-message" id="inputError">Tugas tidak boleh kosong atau kurang dari 3 karakter!</div>
+ <div class="error-message" id="CountError">Tidak boleh lebih dari 5 tugas!</div>
+ </form>
+
+ <!-- Daftar Tugas -->
+ <ul class="todo-list" id="todoList"></ul>
+
+ <!-- Fitur 2: Tombol bersihkan (di bawah daftar) -->
+ <button type="button" id="clearCompletedBtn" class="clear-btn">Bersihkan Tugas Selesai</button>
+ </div>
+
+ <!-- Fitur 3: Pop up konfirmasi di tengah layar -->
+ <dialog id="confirmDialog" class="dialog" aria-labelledby="dialogTitle">
+ <div class="dialog-icon" aria-hidden="true">!</div>
+ <h3 id="dialogTitle">Hapus tugas ini?</h3>
+ <p>Apakah Anda yakin ingin menghapus tugas ini?</p>
+ <div class="dialog-actions">
+ <button type="button" id="dialogCancel" class="btn-ghost">Batal</button>
+ <button type="button" id="dialogOk" class="btn-danger">Ya, hapus</button>
+ </div>
+ </dialog>
+
+ <script src="script.js"></script>
+</body>
+</html>
