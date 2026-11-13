@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRUD Data Mahasiswa | Modul 7</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__inner">
+      <div class="hero__brand">
+        <span class="hero__logo">M7</span>
+        <div>
+          <h1>CRUD Data Mahasiswa</h1>
+          <p>Full-Stack JavaScript &middot; Express + MySQL (Laragon)</p>
+        </div>
+      </div>
+      <div class="hero__identity">
+        <span class="badge">Praktikum Pemrograman Web</span>
+        <strong>Fugi Kusnaedi</strong>
+        <span class="hero__nim">NIM 2406088</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card form-card" aria-labelledby="judulForm">
+      <h2 id="judulForm">Form Data Mahasiswa</h2>
+      <p class="card__subtitle">Lengkapi data di bawah, lalu simpan.</p>
+
+      <form id="formMahasiswa" autocomplete="off" novalidate>
+        <input type="hidden" id="idEdit" value="" />
+
+        <div class="field">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" name="nama" placeholder="Contoh: Fugi Kusnaedi" maxlength="100" required />
+        </div>
+
+        <div class="field">
+          <label for="nim">NIM</label>
+          <input type="text" id="nim" name="nim" placeholder="Contoh: 2406088" inputmode="numeric" maxlength="20" required />
+        </div>
+
+        <div class="field">
+          <label for="jurusan">Jurusan</label>
+          <input type="text" id="jurusan" name="jurusan" placeholder="Contoh: Teknik Informatika" maxlength="100" required />
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn--primary" id="tombolSimpan">Simpan Data</button>
+          <button type="button" class="btn btn--ghost" id="tombolBatal" hidden>Batal</button>
+        </div>
+
+        <p class="form-hint" id="formHint">Data akan disimpan ke database MySQL melalui REST API.</p>
+      </form>
+    </section>
+
+    <section class="card table-card" aria-labelledby="judulTabel">
+      <div class="table-head">
+        <div>
+          <h2 id="judulTabel">Daftar Mahasiswa</h2>
+          <p class="counter" id="counterMahasiswa" aria-live="polite">Total Mahasiswa Terdaftar: 0 Orang</p>
+        </div>
+
+        <div class="search">
+          <span class="search__icon" aria-hidden="true">&#128269;</span>
+          <input
+            type="search"
+            id="inputCari"
+            placeholder="Cari nama atau NIM..."
+            aria-label="Cari nama atau NIM"
+          />
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th style="width: 56px;">No</th>
+              <th>Nama</th>
+              <th>NIM</th>
+              <th>Jurusan</th>
+              <th style="width: 150px;">Aksi</th>
+            </tr>
+          </thead>
+          <tbody id="tbodyMahasiswa">
+            <tr>
+              <td colspan="5" class="empty">Memuat data...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="table-foot" id="infoFilter" hidden></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Fugi Kusnaedi &middot; NIM 2406088 &middot; Tugas Modul 7</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

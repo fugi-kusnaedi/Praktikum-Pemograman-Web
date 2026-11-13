@@ -1,0 +1,25 @@
+{
+  "name": "crud-mahasiswa-pertemuan-7",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aplikasi CRUD Full-Stack JavaScript (Express + MySQL) - Tugas Modul 7 Praktikum Pemrograman Web",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "crud",
+    "express",
+    "mysql",
+    "javascript",
+    "laragon"
+  ],
+  "author": "Fugi Kusnaedi (2406088)",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mysql2": "^3.12.0"
+  }
+}
