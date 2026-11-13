@@ -30,7 +30,7 @@
 
 ---
 ## Catatan Modul 6
-- Praktikum Asynchronous JavaScript & Fetch API (folder `P06/`).
+- Praktikum Asynchronous JavaScript & Fetch API (folder `P06/`, tersimpan di branch `Pertemuan-6`).
 - Mengambil data pengguna dari API `jsonplaceholder.typicode.com` lalu merendernya menjadi kartu.
 - Menangani status loading, pesan error, dan tombol muat data.
 
@@ -50,4 +50,4 @@
 | `pertemuan-4` | Praktikum Pertemuan 4 |
 | `Pertemuan-5` | Praktikum Pertemuan 5 |
 | `Pertemuan-6` | Folder `P06` |
-| `pertemuan-7` | Folder `P06` + `Pertemuan 7` (Modul 7) |
+| `pertemuan-7` | Folder `Pertemuan 7` (Modul 7) |
