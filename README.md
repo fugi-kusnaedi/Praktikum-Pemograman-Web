@@ -27,3 +27,27 @@
 |**Versi Node.js**| v24.21.0|
 |**Versi Git**|git version 2.56.0.windows.1|
 |**Versi Laragon**| 11.19.0|
+
+---
+## Catatan Modul 6
+- Praktikum Asynchronous JavaScript & Fetch API (folder `P06/`).
+- Mengambil data pengguna dari API `jsonplaceholder.typicode.com` lalu merendernya menjadi kartu.
+- Menangani status loading, pesan error, dan tombol muat data.
+
+---
+## Catatan Modul 7
+- CRUD Full-Stack JavaScript + MySQL (Laragon) — folder `Pertemuan 7/`.
+- Backend **Express REST API** (`/api/mahasiswa`), frontend HTML/CSS/JavaScript.
+- 3 fitur interaktif: pencarian real-time (`filter`), validasi duplikat NIM (`some`), dan counter total mahasiswa.
+- Menjalankan: masuk ke folder `Pertemuan 7` → `npm install` → `npm start` → buka `http://localhost:3000`.
+
+---
+## Daftar Branch
+| Branch | Isi |
+| :--- | :--- |
+| `main` | README & Modul 1 |
+| `Pertemuan_3` | Pertemuan 2 & 3 |
+| `pertemuan-4` | Praktikum Pertemuan 4 |
+| `Pertemuan-5` | Praktikum Pertemuan 5 |
+| `Pertemuan-6` | Folder `P06` |
+| `pertemuan-7` | Folder `P06` + `Pertemuan 7` (Modul 7) |
